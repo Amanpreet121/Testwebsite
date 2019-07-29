@@ -6,7 +6,7 @@
 
 body{
 	overflow-x: hidden;
-	font-family: 'sans-serif';
+	font-family: 'Sans-serif';
 }
 
 .navbar {
@@ -57,12 +57,14 @@ input {
 
 .main-nav3 li{
     list-style: none;
+    padding: 3px 0;
 }
 .main-nav3 li a{
     padding: 5px 0;
     text-decoration: none;
-    font-size: 90%; 
-    font-weight: 100;
+    font-size: 17px; 
+    font-weight: 300;
+    color: black;
 }
 .main-nav3 li a:hover{
     border-bottom: 2px solid black;
@@ -153,7 +155,7 @@ input {
 
 #hidden-text {
     display: none;
-    padding: 20px;
+    text-align: justify;
 }
 
 #readmore {
@@ -209,7 +211,13 @@ footer {
 
 .main-nav2 li a {
     text-decoration: none;
+    color: black;
 }
+
+.main-nav2 li a:hover{
+    border-bottom: 1px solid black;
+}
+
 .list2 {
     margin-left: 27px;
 }
@@ -284,6 +292,10 @@ li .fa {
         display: none;
     }
       
+    #hidden-text {
+        padding: 0 20px;
+        text-align: justify;
+    }
     .main-nav{
         padding: 25px;
         border: 1px solid black;
