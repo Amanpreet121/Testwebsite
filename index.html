@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Office Supplies</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="office.css">
+</head>
+
+<body>
+   
+    <header>
+        <div class="navbar">
+            <a href="#" class="toggle"> <span class="icon">&#9776;</span></a>
+            <div class="brand">
+                <img class="logo" src="images/OfficeSupplies.jpg" alt="Office Supplies">
+            </div>
+            <div class="search-div">
+                <input type="text" name="searchbox" placeholder="Search Here">
+                <button class="btn" type="button">Search</button>
+            </div>
+
+            <div class="cart-div">
+                <div class="box">
+                    <i class="fa fa-shopping-cart" style="font-size:36px"></i>
+                    <a href="#"><label ID="lblCartCount">1</label></a>
+                </div>
+                <div class="cart-values">
+                    <span id="quantity">1</span>
+                    <span id="units">st</span>
+                </div>
+                <div class="cart-values space-div">
+                    <span id="price">565</span>
+                    <span id="currency">,00 kr</span>
+                </div>
+            </div>
+            <div class="checkout">
+                <button class="btn" type="button">Check out</button>
+            </div>
+        </div>
+
+        <nav>
+            <ul class="main-nav">
+                <li><a href="#">All our products</a></li>
+                <li><a href="#">Inspiration for the office</a></li>
+                <li><a href="#">About us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="section1">
+            <div class="description">
+                <h1 style="padding: 10px 20px">Paper</h1>
+                <div class="price-container">
+                    <div class="price-box">
+                        <div class="first-box">
+                            <div class="price">
+                                <h4>565,00 kr</h4>
+                                <p id="oldprice">676 kr</p>
+                            </div>
+                            <select class="drop-down">
+                                <option value="White">White</option>
+                                <option value="Blue">Blue</option>
+                                <option value="Red">Red</option>
+                                <option value="Pink">Pink</option>
+                            </select>
+                        </div>
+                        <div class="second-box">
+                            <button class="btn1" type="button" onclick="calculate()">Buy</button>
+                        </div>
+                    </div>
+                </div>
+                <p class="description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod
+                    bibendum laoreet.
+                    Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.
+                    Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient
+                    montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate,
+                    felis tellus mollis orci, sed rhoncus sapien nunc eget odio.<br><br>
+
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et
+                    viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus
+                    et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum,
+                    nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien
+                    nunc eget odio.<br><br>
+
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et
+                    viverra justo commodo. Proin sodales </p>
+                <p id="hidden-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et
+                    viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus
+                    et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum,
+                    nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien
+                    nunc eget odio.<br><br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et
+                    viverra justo commodo. Proin sodale</p>
+                <div id="readmore">
+                    <button class="btn" type="button" id="show" onclick="showMe()">Read More</button>
+                </div>
+            </div>
+            <div class="nav-container">
+                <ul class="main-nav3">
+                    <li><a href="#">Paper clips</a></li>
+                    <li><a href="#">Post-it notes</a></li>
+                    <li><a href="#">Staples</a></li>
+                    <li><a href="#">Hole punches</a></li>
+                    <li><a href="#">Binders</a></li>
+                    <li><a href="#">Staplers</a></li>
+                    <li><a href="#">Laminators</a></li>
+                    <li><a href="#">Writing utensils</a></li>
+                    <li><a href="#">Paper</a></li>
+                    <li><a href="#">Computers</a></li>
+                    <li><a href="#">Printers</a></li>
+                    <li><a href="#">Fax machines</a></li>
+                    <li><a href="#">Photocopiers</a></li>
+                    <li><a href="#">Cash registers</a></li>
+                    <li><a href="#">Office furniture</a></li>
+                    <li><a href="#">Chairs</a></li>
+                    <li><a href="#">Cubicles</a></li>
+                    <li><a href="#">Filing cabinet</a></li>
+                    <li><a href="#">Armoire desks</a></li>
+                </ul>
+            </div>
+            <div class="card">
+                <div class="top-section">
+                    <div id="img-container">
+                        <img id="main-img" src="images/paper1.jpg" alt="Main Product Image">
+                    </div>
+                    <div class="img-nav">
+                        <div class="img-block">
+                            <img onClick="changeImg(this)" src="images/paper1.jpg" alt="Paper1">
+                        </div>
+                        <div class="img-block">
+                            <img onClick="changeImg(this)" src="images/paper2.jpg" alt="Paper2">
+                        </div>
+                        <div class="img-block">
+                            <img onClick="changeImg(this)" src="images/paper3.jpg" alt="Paper3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section2">
+            <div class="inspiration">
+                <h2>Paper is awesome!</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Aenean euismod bibendum laoreet. Proin gravida dolor sit amet
+                    lacus accumsan et viverra justo commodo. Proin sodales pulvinar
+                    tempor. </p>
+            </div>
+            <div class="inspiration">
+                <h2>Paper is awesome!</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Aenean euismod bibendum laoreet.</p>
+            </div>
+            <div class="inspiration">
+                <h2>Paper is awesome!</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Aenean euismod bibendum laoreet. Proin gravida dolor sit amet
+                    lacus accumsan et viverra justo commodo.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-description">
+            <h1 class="footer-title">Office Supplies</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+                Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.
+                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget
+                odio.</p>
+        </div>
+        <div class="footer-links">
+            <div class="links">
+                <h2>Bestsellers</h2>
+                <ul class="main-nav2">
+                    <div class="list1">
+                        <li><a href="#">A4</a></li>
+                        <li><a href="#">A5</a></li>
+                        <li><a href="#">Pens</a></li>
+                        <li><a href="#">staplers</a></li>
+                    </div>
+                    <div class="list2">
+                        <li><a href="#">A4</a></li>
+                        <li><a href="#">A5</a></li>
+                        <li><a href="#">Pens</a></li>
+                        <li><a href="#">staplers</a></li>
+                    </div>
+                </ul>
+            </div>
+            <div class="social">
+                <h2>We'r social</h2>
+                <ul class="social-list">
+                    <li><a href="#" class="fa fa-facebook"></a></li>
+                    <li><a href="#" class="fa fa-twitter"></a></li>
+                    <li><a href="#" class="fa fa-linkedin"></a></li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
