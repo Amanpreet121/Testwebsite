@@ -111,6 +111,8 @@ input {
     padding: 10px;
 } 
 
+/*---------------------Description Box Styling-------------------------------*/
+
 .description {
     flex:50%;
     order:3;
